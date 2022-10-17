@@ -1,0 +1,29 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+h1 {
+    color: var(--branco-principal);
+}
+
+.principal { 
+    background-image: url(../img/Background.png); /*Quando é só uma img decorativa é interessante usar ela com o bkg-img do css*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+}
