@@ -13,9 +13,24 @@
 
 body {
     background-color: var(--cor-fundo);
+    color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+}
+
+.principal { 
+    background-image: url(../img/Background.png); /*Quando é só uma img decorativa é interessante usar ela com o bkg-img do css*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__titulo {
@@ -24,16 +39,8 @@ body {
     font-weight: 700;
 }
 
-.principal { 
-    background-image: url(../img/Background.png); /*Quando é só uma img decorativa é interessante usar ela com o bkg-img do css*/
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+.container__imagem {
+    margin: 1em 0 2em 0;
 }
 
 .container__botao {
@@ -44,6 +51,7 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -57,4 +65,33 @@ body {
     text-align: center;
     font-size: 12px;
     color: var(--cinza-secundario);
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
 }
