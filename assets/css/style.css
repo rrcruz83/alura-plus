@@ -4,6 +4,7 @@
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
     --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #638ec4;
 }
 
 * {
@@ -54,10 +55,7 @@ body {
     margin-bottom: 1em;
 }
 
-.botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--branco-principal);
-    text-align: center;
+.botao_secundario {azul
 }
 
 .container__aviso {
@@ -94,4 +92,70 @@ body {
 .secundario__botao {
     display: inline-block;
     margin-top: 1em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.logo {
+    width: 102px;
+    margin: 30px;
+}
+
+.lista__rodape {
+    margin-top: 1em;
+}
+
+.lista__link {
+    display: inline;
+    margin-left: 1em;
+}
+
+.lista__link a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 1em 0;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: #9224ad;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: #00030C;
 }
