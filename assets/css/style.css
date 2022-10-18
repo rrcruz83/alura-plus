@@ -55,7 +55,10 @@ body {
     margin-bottom: 1em;
 }
 
-.botao_secundario {azul
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    text-align: center;
 }
 
 .container__aviso {
